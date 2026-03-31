@@ -1,298 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sabut B K Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      /* ABOUT SECTION */
-      .about-mf .box-shadow-full {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
-
-      .about-mf .about-img img {
-        margin-left: 10px;
-      }
-
-      .skill-mf .progress {
-        margin: .5rem 0 1.2rem 0;
-        height: .7rem;
-        border-radius: 0;
-      }
-
-      .skill-mf .progress .progress-bar {
-        background-color: #ffbd39;
-        height: .7rem;
-      }
-
-      /* Typing animation */
-      #typing-animation {
-        font-size: 30px;
-        font-weight: bold;
-        color: #fff;
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typing 3s steps(20, end) infinite;
-      }
-
-      @keyframes typing {
-        from { width: 0; }
-        to { width: 100%; }
-      }
-
-      /* Image Zoom */
-      .zoom-effect {
-        overflow: hidden;
-        transition: transform 0.3s ease-out;
-      }
-
-      .zoom-effect:hover {
-        transform: scale(1.1);
-      }
-
-      /* Resume Section */
-      .resume-section iframe {
-        border: none;
-        width: 100%;
-        height: 800px;
-      }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #ffffff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: #ffffff;
+        }
     </style>
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Sabut B K</a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
-          <span class="oi oi-menu"></span> Menu
-        </button>
-
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item"><a href="#Home-section" class="nav-link"><span>Home</span></a></li>
-            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="Home-section" class="hero">
-      <div class="home-slider owl-carousel">
-        <div class="slider-item">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
-              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bbb.png);">
-                <div class="overlay"></div>
-              </div>
-              <div class="one-forth d-flex align-items-center ftco-animate">
-                <div class="text">
-                  <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">I'm <span>Sabut B K</span></h1>
-
-                  <span id="typing-animation"></span>
-                  <script>
-                    const typingAnimationElement = document.getElementById('typing-animation');
-                    const typingTexts = ['IT Support Enthusiast ','Cybersecurity Student ','Networking & Troubleshooting '];
-                    function playTypingAnimation(text) {
-                      for (let i = 0; i < text.length; i++) {
-                        setTimeout(() => {
-                          typingAnimationElement.textContent += text[i];
-                        }, i * 200);
-                      }
-                      setTimeout(() => {
-                        typingAnimationElement.textContent = '';
-                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                      }, text.length * 200);
-                    }
-                    playTypingAnimation(typingTexts[0]);
-                  </script>
-
-                  <br><br>
-                  <h2>Bachelor of IT (Cyber Security)</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-      <div class="container">
-        <div class="row d-flex align-items-stretch">
-          <div class="col-md-6 col-lg-5 d-flex">
-            <div class="img-about img d-flex align-items-stretch">
-              <div class="overlay">
-                <div class="about-img">
-                  <img src="photo.png" class="img-fluid rounded b-shadow-a" alt="">
-                </div>
-                <div class="about-info mt-3">
-                  <p><span class="title-s">Name: </span> <span>Sabut B K</span></p>
-                  <p><span class="title-s">Job Role: </span> <span>IT Support Enthusiast | Cybersecurity Student</span></p>
-                  <p><span class="title-s">Experience: </span> <span>Beginner</span></p>
-                  <p><span class="title-s">Address: </span> <span>Melbourne, Australia</span></p>
-                </div>
-                <div class="skill-mf mt-4">
-                  <p class="title-s">Skills</p>
-                  <span>Networking</span> <span class="pull-right">70%</span>
-<div class="progress"><div class="progress-bar" style="width:70%"></div></div>
-
-<span>Linux</span> <span class="pull-right">60%</span>
-<div class="progress"><div class="progress-bar" style="width:60%"></div></div>
-
-<span>Windows Troubleshooting</span> <span class="pull-right">65%</span>
-<div class="progress"><div class="progress-bar" style="width:65%"></div></div>
-
-<span>Python</span> <span class="pull-right">55%</span>
-<div class="progress"><div class="progress-bar" style="width:55%"></div></div>
-
-<span>SQL</span> <span class="pull-right">65%</span>
-<div class="progress">
-  
-<div class="progress-bar" style="width:65%"></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-            <div class="heading-section ftco-animate">
-              <h1 class="big">About</h1>
-              <h2 class="mb-4">About Me</h2>
-              <p>I am currently pursuing a Bachelor of Information Technology (Cyber Security) at Victoria Institute of Technology in Australia. I am passionate about IT infrastructure, system troubleshooting, and network administration, and I enjoy learning how technology works behind the scenes.
-              </p>
-
-              <p>Through my studies and personal labs, I have gained hands-on experience with Linux systems, networking concepts, and security tools. I enjoy setting up virtual environments to practice system configuration, troubleshooting, and network analysis.
-              </p>
-
-             <p>I am currently seeking opportunities in IT Support or Helpdesk roles where I can apply my technical knowledge, problem-solving skills, and enthusiasm for technology while continuing to grow my cybersecurity expertise.
-             </p>
-              <p><a href="#resume-section" class="btn btn-primary py-3 px-4">View Resume</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section class="ftco-section resume-section" id="resume-section">
-      <div class="container text-center">
-        <h1 class="big">Resume</h1>
-        <h2 class="mb-4">My Resume</h2>
-        <p>You can view or download my resume below for more details about my qualifications.</p>
-        <!-- Replace the link below with your actual resume link -->
-        <iframe src="Sabut_BK_Resume.pdf" width="100%" height="800"></iframe>
-
-
-        <br><br>
-        <a href="Sabut_BK_Resume.pdf" target="_blank" class="btn btn-primary py-3 px-5">Download Resume</a>
-
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are my details to reach out!</p>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-map-signs"></span>
-              </div>
-              <h3 class="mb-4">Address</h3>
-              <p>Melbourne, Australia</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-phone2"></span>
-              </div>
-              <h3 class="mb-4">Contact Number</h3>
-              <p><a href="tel:+61452180047">+61 452 180 047</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
-              </div>
-              <h3 class="mb-4">Email</h3>
-              <p><a href="mailto:sabutsunar97@gmail.com">sabutsunar97@gmail.com</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-globe"></span>
-              </div>
-              <h3 class="mb-4">LinkedIn</h3>
-              <p><a href="https://www.linkedin.com/in/sabut-b-k-841639354/">linkedin.com/in/sabut-bk</a></p>
-            </div>
-          </div>
-        </div>
-
-        <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-          <li class="ftco-animate normal-txt">Find me on</li>
-          <li class="ftco-animate"><a href="https://www.facebook.com/saabut.sunar"><span class="icon-facebook"></span></a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="ftco-footer ftco-section">
-      <div class="container text-center">
-        <p>Copyright &copy;
-          <script>document.write(new Date().getFullYear());</script>
-          All rights reserved.
-        </p>
-      </div>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class='container'>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Here is some information about me.</p>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>Details about my projects.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>© 2026 My Portfolio</p>
     </footer>
-
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
