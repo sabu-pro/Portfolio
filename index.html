@@ -3,53 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabut B K Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: #fff; padding: 10px 0; text-align: center; }
+        section { padding: 20px; }
+        /* Add animations and styles here */
+    </style>
+    <script>
+        // Typing animation script
+        document.addEventListener('DOMContentLoaded', function() {
+            const element = document.getElementById('typing-animation');
+            const text = "Welcome to my portfolio!";
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100);
+                }
+            }
+            type();
+        });
+    </script>
 </head>
 <body>
     <header>
-        <h1>Welcome to my Portfolio!</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>My Portfolio</h1>
     </header>
     <section id="home">
         <h2>Home</h2>
-        <p>This is the home section of my portfolio.</p>
+        <div id="typing-animation"></div>
     </section>
     <section id="about">
         <h2>About</h2>
-        <p>Details about me and my background.</p>
+        <p>This is the about section.</p>
     </section>
     <section id="resume">
         <h2>Resume</h2>
-        <p>Information about my skills and experiences.</p>
+        <p>This is the resume section.</p>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>How to get in touch with me.</p>
+        <p>This is the contact section.</p>
     </section>
-    <footer>
-        <p>&copy; 2026 Sabut B K. All rights reserved.</p>
-    </footer>
-    <!-- JavaScript for typing animation -->
-    <script>
-        const text = 'Welcome to my Portfolio!';
-        let index = 0;
-        function type() {
-            if (index < text.length) {
-                document.querySelector('h1').innerHTML += text.charAt(index);
-                index++;
-                setTimeout(type, 100);
-            }
-        }
-        type();
-    </script>
 </body>
 </html>
